@@ -23,16 +23,22 @@ local function init_params()
 	OVERLAY_FONT = love.graphics.newFont(20)
 	DEFAULT_FONT = love.graphics.newFont(12)
 end
+
+local function extract_nb(lines)
+	local nb
+	for line in lines do
+		nb = string.match(line, "%d+")
+	end
+	return nb
+end
+
 local function init_graphics()
 	love.graphics.setBackgroundColor(0.3,0.3,0.5)
 	ANT_IMG = love.graphics.newImage("img/ant.png")
 	local lines = love.filesystem.lines("visualize_me.output")
-	local required = love.filesystem.lines("required")
-	-- CONTINUE HERE
-	-- Extract number of max rounds from "required" output
-	-- Display on overlay
-	-- nb_required = 
 	Parse_lines(lines)
+	local req = love.filesystem.lines("required")
+	MAX_MOVES = extract_nb(req)
 	POLYGON = RegularPoly(love.graphics.getWidth() / 2, love.graphics.getHeight() / 2, ANTFARM.nb_of_rooms, 100 + ANTFARM.nb_of_rooms * 3)
 	Polygonize_coordinates()
 	Mark_paths()

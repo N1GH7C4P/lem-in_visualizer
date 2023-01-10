@@ -115,7 +115,7 @@ function Update_moves(round_of_moves, update_count)
 end
 
 function Draw_overlay()
-	local msg = "ROUND: " .. CURRENT_ROUND + 1 .. " / "..ANTFARM.nb_rounds_of_moves.."\nZOOM:".. WINDOW.zoom .. "\nTRANSLATE_X: " .. WINDOW.translate.x .. "\nTRANSLATE_Y: " .. WINDOW.translate.y .. "\nANTS AT START: " .. ANTFARM.ants_at_start .. "\nANTS ON PATH: " .. ANTFARM.nb_of_ants - (ANTFARM.ants_at_end + ANTFARM.ants_at_start) .. "\nANTS FINISHED: " .. ANTFARM.ants_at_end
+	local msg = "ROUND: " .. CURRENT_ROUND + 1 .. " / "..ANTFARM.nb_rounds_of_moves.."\nZOOM:".. WINDOW.zoom .. "\nTRANSLATE_X: " .. WINDOW.translate.x .. "\nTRANSLATE_Y: " .. WINDOW.translate.y .. "\nANTS AT START: " .. ANTFARM.ants_at_start .. "\nANTS ON PATH: " .. ANTFARM.nb_of_ants - (ANTFARM.ants_at_end + ANTFARM.ants_at_start) .. "\nANTS FINISHED: " .. ANTFARM.ants_at_end .. "\nMAX ROUNDS: " .. MAX_MOVES
 	local controls = "CONTROLS:\n\nadvance ants:\nchange projection:\nzoom:\nnavigate view:\nreset simulation:\nexit proggram:\nreset navigation:"
 	local keys = "\n\nleft mouse button\nright mouse button\nscroll mouse wheel\nhold mouse wheel and move mouse\nr\nescape key\nspace bar"
 
