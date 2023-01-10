@@ -3,9 +3,9 @@ Cool visualizer program for 42 -school algorithms project "lem-in", coded with L
 
 ## Installation
 
-(1) Git clone this repo into root of your lem-in project
-(2) create "maps" and "output" folders in root of your lem-in project
-(3) copy these lines into the Makefile of your lem-in project:
+1. Git clone this repo into root of your lem-in project
+2. create "maps" and "output" folders in root of your lem-in project
+3. copy these lines into the Makefile of your lem-in project:
 
 ```
 visualize:		all
