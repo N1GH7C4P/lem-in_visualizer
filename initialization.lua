@@ -27,7 +27,7 @@ local function init_graphics()
 	love.graphics.setBackgroundColor(0.3,0.3,0.5)
 	ANT_IMG = love.graphics.newImage("img/ant.png")
 	local lines = love.filesystem.lines("visualize_me.output")
-	local required = love.flesystem.lines("required")
+	local required = love.filesystem.lines("required")
 	-- CONTINUE HERE
 	-- Extract number of max rounds from "required" output
 	-- Display on overlay
