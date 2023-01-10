@@ -1,6 +1,8 @@
 # lem-in_visualizer
 Cool visualizer program for 42 -school algorithms project "lem-in", coded with Love2D.
 
+ ![beautifull usage screenshot](/img/screenshot.png)
+
 ## Installation
 
 1. Git clone this repo into root of your lem-in project
