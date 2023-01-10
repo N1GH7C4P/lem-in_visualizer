@@ -14,6 +14,9 @@ visualize_rand:	all
 				sh ./lem-in_visualizer/visualize_random.sh
 ```
 
+If there is something unclear, you can go and check that everything is setup similarly as my own lem-in:
+https://github.com/N1GH7C4P/lem-in
+
 ## Usage - Any map
 
 If you want to visualize a certain map file, put that file into the "maps" -folder and rename it "visualize_me.map".
